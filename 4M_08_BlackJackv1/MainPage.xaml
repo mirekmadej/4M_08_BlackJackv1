@@ -12,17 +12,56 @@
                 Text="BlackJack"
                 HorizontalOptions="Center"
                 FontSize="32" />
+            <Label
+                Text="Krupier"
+                />
+            <HorizontalStackLayout Spacing="5">
+                <Label
+                    Text="Karty"
+                    />
+                <Label
+                    Text=""
+                    x:Name="lblKartyKrupiera"
+                    />
+            </HorizontalStackLayout>
+            <Label
+                Text="Gracz"
+                />
+            <HorizontalStackLayout Spacing="5">
+                <Label
+                    Text="Karty"
+                    />
+                <Label
+                    Text=""
+                    x:Name="lblKartyGracza"
+                    />
+            </HorizontalStackLayout>
+            <Label
+                Text="Punkty: "
+                />
+            <HorizontalStackLayout Spacing="10"
+                HorizontalOptions="Center">
+                <Button
+                    Text="Dobierz"
+                    x:Name="btnDobierz"
+                    Clicked="btnDobierzClicked"
+                    WidthRequest="150"
+                    IsVisible="false"
+                    />            
+                <Button
+                    Text="Pass"
+                    x:Name="btnPass"
+                    Clicked="btnPassClicked"
+                    WidthRequest="150"
+                    IsVisible="false"
+                    />                
+            </HorizontalStackLayout>
 
             <Button
-                Text="Nowa gra"
-                x:Name="btnNowa"
-                Clicked="btnNowaClicked"
-                />
-            <Button
-                Text="Graj"
-                x:Name="btnGraj"
-                Clicked="btnGrajClicked"
-                IsVisible="false"
+                Text="Nowa Gra"
+                x:Name="btnNowaGra"
+                Clicked="btnNowaGraClicked"
+                IsVisible="True"
                 />
 
 
