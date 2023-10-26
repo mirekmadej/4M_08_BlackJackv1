@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="_4M_08_BlackJackv1.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Spacing="25"
+            Padding="30,0"
+            >
+            <Label
+                Text="BlackJack"
+                HorizontalOptions="Center"
+                FontSize="32" />
+
+            <Button
+                Text="Nowa gra"
+                x:Name="btnNowa"
+                Clicked="btnNowaClicked"
+                />
+            <Button
+                Text="Graj"
+                x:Name="btnGraj"
+                Clicked="btnGrajClicked"
+                IsVisible="false"
+                />
+
+
+
+
+
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
